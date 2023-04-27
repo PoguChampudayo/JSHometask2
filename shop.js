@@ -54,7 +54,7 @@ function addToCart(item, cart=shoppingCart) {
                 flag = false
             }
         });
-        if (flag == true) cart.push({good:item, quantity:1})
+        if (flag) cart.push({good:item, quantity:1})
         return cart
     
 }
@@ -95,6 +95,8 @@ clearCart()
 addToCart(regularJeans)
 addToCart(blackJacket)
 addToCart(blackJacket)
+addToCart(blueShoes)
+addToCart(blueShoes)
 addToCart(blueShoes)
 addToCart(regularJeans)
 console.log(showCart())
